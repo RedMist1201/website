@@ -7,30 +7,101 @@
         body
         {
             background-color: black;
-            font-family: 'Blender Pro Bold';
-            color: white;
         }
         h1
         {
+            color: white;
             font-family: 'Blender Pro Bold';
             font-style: normal;
-            font-size: 1,6em;
+            font-size: 30px;
+            padding: 1em 1em 1em 1em;
+        }
+        a
+        {
+            text-decoration: none;
+            color: black;
+            padding: 15px 15px 15px 15px;
+        }
+        #text
+        {
+            margin: auto;
+            height: 6em;
+        }
+        #menu
+        {
+            align-items: right;
+            color: white;
+        }
+        #mid-box
+        {
+            vertical-align: center;
+            margin: auto;
+            left: 10%;
+            right: 10%;
+            width: 80%;
+            top: 10em;
         }
         @font-face 
         {
         font-family: "Blender Pro Bold";
-        src: url("http://db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.eot"); /* IE9*/
-        src: url("http://db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-        url("http://db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.woff2") format("woff2"), /* chrome firefox */
-        url("http://db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.woff") format("woff"), /* chrome firefox */
-        url("http://db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-        url("http://db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.svg#Blender Pro Bold") format("svg"); /* iOS 4.1- */
+        src: url("https://db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.eot"); /* IE9*/
+        src: url("https://db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("https://db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.woff2") format("woff2"), /* chrome firefox */
+        url("https://db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.woff") format("woff"), /* chrome firefox */
+        url("https://db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+        url("https://db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.svg#Blender Pro Bold") format("svg"); /* iOS 4.1- */
+        }
+        #nav_wrapper
+        {
+            height:50px;
+            width:100%;
+            background: whitesmoke;
+            margin-top: 2em;
+            margin-bottom:50px;
+            position:absolute;
+            align: center;
+            text-align: center;
+            padding: 13px 13px 13px 13px;
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Blender Pro Bold';
         }
     </style>
 <body>
 	<div id="app"></div>
     <script src="https://threejs.org/build/three.js"></script>
     <script src="style/index.js"></script>
+    <div id="text"><a href="index.html">
     <h1>Stream Shack Streamers</h1>
+    </a>
+    </div>
+    <div id="nav_wrapper">
+        <a href="index.html">Test 1</a>
+        <a href="index.html">Test 1</a>
+        <a href="index.html">Test 1</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="mid-box">
+        <div id="twitch-embed"></div>
+    
+        <!-- Load the Twitch embed script -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    
+        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+        <script type="text/javascript">
+          new Twitch.Embed("twitch-embed", {
+            width: 1200,
+            height: 480,
+            channel: "esl_csgo",
+            theme: "dark",
+          });
+        </script>
+    </div>
 </body>
 </html>
