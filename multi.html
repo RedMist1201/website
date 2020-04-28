@@ -2,8 +2,16 @@
 <html> 
     <link rel="stylesheet" type="text/css" href="style/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
     <title>Team Streamers</title>
     <style>
+        header
+        { 
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 80px;
+        }
         body
         {
             background-color: black;
@@ -69,9 +77,7 @@
         }
     </style>
 <body>
-	<div id="app"></div>
-    <script src="https://threejs.org/build/three.js"></script>
-    <script src="style/index.js"></script>
+    <header>
     <div id="text"><a href="index.html">
     <h1>Team Streamers</h1>
     </a>
@@ -81,14 +87,34 @@
         <a href="index.html">Test 1</a>
         <a href="index.html">Test 1</a>
     </div>
+    </header>
     <br>
     <br>
     <br>
     <br>
     <br>
+    <br>
+    <div id="centered">
+    <div id="mid-box">
+        <div id="embed_cardruglord"></div>
+        <iframe id="embed_cardruglord" src="https://player.twitch.tv/?muted=true&channel=cardruglord" height="250" width="400" class="stream" allowfullscreen="true" scrolling="yes"></iframe>
+        <iframe id="embed_cardruglord" src="https://player.twitch.tv/?muted=true&channel=cardruglord" height="250" width="400" class="stream" allowfullscreen="true" scrolling="yes"></iframe>
+    </div>
     <div id="mid-box">
         <div id="twitch-embed"></div>
-        <iframe src="https://embed.twitch.tv?channel=xmeetyourdemise&amp;layout=video-with-chat&amp;theme=dark" allowfullscreen="" scrolling="no" frameborder="0" allow="autoplay; fullscreen" width="100%" height="550"></iframe>
+        <iframe id="chat-cardruglord-embed" src="https://twitch.tv/chat/embed?channel=cardruglord&amp;popout_chat=true&amp;theme=dark" height="310" width="400" scrolling="yes"></iframe>
+        <iframe id="chat-cardruglord-embed" src="https://twitch.tv/chat/embed?channel=cardruglord&amp;popout_chat=true&amp;theme=dark" height="310" width="400" scrolling="yes"></iframe>
+    </div>
+    <div id="mid-box">
+        <div id="twitch-embed"></div>
+        <iframe id="embed_cardruglord" src="https://player.twitch.tv/?muted=true&channel=cardruglord" height="250" width="400" class="stream" allowfullscreen="true" scrolling="yes"></iframe>
+        <iframe id="embed_cardruglord" src="https://player.twitch.tv/?muted=true&channel=cardruglord" height="250" width="400" class="stream" allowfullscreen="true" scrolling="yes"></iframe>
+    </div>
+    <div id="mid-box">
+        <div id="twitch-embed"></div>
+        <iframe id="chat-cardruglord-embed" src="https://twitch.tv/chat/embed?channel=cardruglord&amp;popout_chat=true&amp;theme=dark" height="310" width="400" scrolling="yes"></iframe>
+        <iframe id="chat-cardruglord-embed" src="https://twitch.tv/chat/embed?channel=cardruglord&amp;popout_chat=true&amp;theme=dark" height="310" width="400" scrolling="yes"></iframe>
+        </div>
     </div>
 </body>
 </html>
